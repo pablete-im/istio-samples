@@ -50,7 +50,7 @@ To obtain the LB IP address, run the following command and pick the EXTERNAL-IP:
 $> kubectl get svc -n istio-system istio-gateway
 ```
 
-To access the bookinfo application, use this URL: http://<EXTERNAL-IP>/productpage
+To access the bookinfo application, use this URL: http://EXTERNAL-IP/productpage
 
 ## Telemetry Addons
 
