@@ -40,8 +40,8 @@ After the images have been copied, to install the bookinfo app, run the followin
 $> kubectl create ns istio-workloads
 $> kubectl label --overwrite ns istio-workloads istio-injection=enabled
 
-$> kubectl apply -f bookinginfo.yaml -n istio-workloads
-$> kubectl apply -f bookinfo-gateway.yaml -n istio-workloads
+$> kubectl apply -f bookinfo/platform/kube/bookinfo.yaml -n istio-workloads
+$> kubectl apply -f bookinfo/networking/bookinfo-gateway.yaml -n istio-workloads
 ```
 
 To obtain the LB IP address, run the following command and pick the EXTERNAL-IP:
